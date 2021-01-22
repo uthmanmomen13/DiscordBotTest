@@ -1,6 +1,6 @@
 const Discord = require("discord.js");
-const config = require("./config.json");
 const client = new Discord.Client();
+require('dotenv').config();
 
 client.on("message", function(message) { 
     const prefix = "!";                
@@ -17,4 +17,4 @@ client.on("message", function(message) {
     }
 });
 
-client.login(config.BOT_TOKEN);
+client.login(process.env.TOKEN);
