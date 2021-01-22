@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 require('@tensorflow/tfjs');
-require('@tensorflow/tfjs-node');
 const toxicity = require('@tensorflow-models/toxicity');
 const client = new Discord.Client();
 require('dotenv').config();
